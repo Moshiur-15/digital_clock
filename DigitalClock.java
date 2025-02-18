@@ -11,28 +11,23 @@ public class DigitalClock {
     private SimpleDateFormat timeFormat;
 
     public DigitalClock() {
-        frame = new JFrame("Digital Clock");
+        frame = new JFrame("DIGITAL CLOCK");
         frame.setSize(400, 200);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setLayout(new BorderLayout());
-
-        // Set the background color of the frame to white
         frame.getContentPane().setBackground(Color.WHITE);
 
-        // Set font style and text color
         timeFormat = new SimpleDateFormat("HH:mm:ss");
         clockLabel = new JLabel("", SwingConstants.CENTER);
-        clockLabel.setFont(new Font("Arial", Font.BOLD, 50));
-        clockLabel.setForeground(Color.BLACK); // Black text
-        clockLabel.setBackground(Color.WHITE); // White background
+        clockLabel.setFont(new Font("Arial", Font.BOLD, 80));
+        clockLabel.setForeground(Color.WHITE);
+        clockLabel.setBackground(Color.BLACK);
         clockLabel.setOpaque(true);
 
-        // Add the clock label to the frame
         frame.add(clockLabel, BorderLayout.CENTER);
-        frame.setLocationRelativeTo(null); // Center the window
+        frame.setLocationRelativeTo(null);
         frame.setVisible(true);
 
-        // Timer to update the clock every second
         Timer timer = new Timer();
         timer.scheduleAtFixedRate(new TimerTask() {
             @Override
