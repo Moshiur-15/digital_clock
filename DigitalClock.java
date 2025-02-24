@@ -6,6 +6,7 @@ import java.util.Date; //বর্তমান সময় নেওয়ার জ�
 import java.util.Timer;  import java.util.TimerTask; //প্রতি সেকেন্ডে সময় আপডেট করার জন্য।
 
 public class DigitalClock {
+    
     //  উইন্ডো তৈরি করার জন্য ব্যবহার করা হয়েছে।সময় দেখানোর জন্য একটি লেবেল।
     private JFrame frame;
     private JLabel clockLabel;
@@ -13,7 +14,7 @@ public class DigitalClock {
 
     public DigitalClock() {
         frame = new JFrame("DIGITAL CLOCK"); //নতুন উইন্ডো তৈরি করা হয়েছে।
-        frame.setSize(400, 200);
+        frame.setSize(600, 400);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setLayout(new BorderLayout());
 
