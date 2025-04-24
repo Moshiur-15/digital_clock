@@ -18,6 +18,7 @@ public class DigitalClock {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setLayout(new BorderLayout());
 
+        
         // ব্যাকগ্রাউন্ড সাদা (White) ও টেক্সট কালো (Black) করা হয়েছে।
         // সময় "HH:mm:ss" ফরম্যাটে দেখানো হবে।
         // Arial ফন্ট ও 50px ফন্ট সাইজ ব্যবহার করা হয়েছে।
@@ -42,6 +43,7 @@ public class DigitalClock {
             }
         }, 0, 1000);
     }
+
 
     // বর্তমান সময় সংগ্রহ করে clockLabel-এ দেখানো হয়।
     private void updateClock() {
