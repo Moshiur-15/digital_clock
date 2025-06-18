@@ -22,7 +22,7 @@ public class DigitalClock {
                 Graphics2D g2d = (Graphics2D) g;
                 int w = getWidth();
                 int h = getHeight();
-                Color slate800 = new Color(30, 41, 59);
+                Color slate800 = new Color(30, 41, 59); // Slate-800
                 GradientPaint gp = new GradientPaint(0, 0, slate800, 0, h, slate800);
                 g2d.setPaint(gp);
                 g2d.fillRect(0, 0, w, h);
@@ -34,7 +34,7 @@ public class DigitalClock {
         timeFormat = new SimpleDateFormat("HH:mm:ss");
         clockLabel = new JLabel("", SwingConstants.CENTER);
         clockLabel.setFont(new Font("Arial", Font.BOLD, 80));
-        clockLabel.setForeground(new Color(34,197,94));
+        clockLabel.setForeground(new Color(34,197,94)); // Green text
         clockLabel.setBackground(new Color(0,0,0,0));
         clockLabel.setOpaque(false);
         frame.add(clockLabel, BorderLayout.CENTER);
